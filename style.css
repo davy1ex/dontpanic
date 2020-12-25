@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    height: 100vh;
+    background: #1D1D1D;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .text {
+    font-size: 200px;
+    font-family: 'Orbitron', sans-serif;
+
+    color: #FA0105;
+    text-shadow: 1px 1px 5px  #FFFF47;
+}
