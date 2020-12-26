@@ -15,15 +15,21 @@ a:visited, a:hover, a:active {
 
 /* HEADER */
 header {
-    height: 100vh;
-    background: #1D1D1D;
+    height: 100vh;    
+    background-image: url("assets/img/banner-space.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .wrapper-header {
     width: 80%;
+    height: 100%;
     margin: auto;
 }
 .banner {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,6 +80,71 @@ header {
 
 
 
-.container {
+.container {    
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #1E1E29;
+}
+.wrapper-container {
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
+}
+.wrapper-container > .title, .wrapper-container > form {
+    color: #FFFF47;
+    text-shadow: 1px 1px 3px #FA0105;    
+}
+.wrapper-container > .title {
+    font-size: 2em;
+}
+.contacts {
+    background: #1E1E29;
+}
+
+.contacts form {
+    width: 50%;
+    margin-left: 20px;
+}
+.user-email, .user-text {
+    display: flex;
+    flex-direction: column;
+}
+.contacts input, .contacts textarea {
+    box-shadow: 0px 0px 4px #0095E4;
+    border: none;
+    background-color: #1E1E29;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 20px;
+    color: #FA0105;
+    text-shadow: 0px 0px 1px #FFFF47;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+    box-shadow: 0px 0px 10px #FFFF47;
+    border: none;
+}
+
+
+.desc-field {
+    display: flex;
+    flex-direction: row;
+
+    font-size: 1.5em;
+    color: #FFFF47;
+    text-shadow: 1px 1px 3px #FA0105;    
+}
+
+.desc-field .text {
+    padding: 20px;
+}
+
+
+.about_us-text {
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    color: #FFFF47;
+    text-shadow: 1px 1px 3px #FA0105;    
 }
