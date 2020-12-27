@@ -3,6 +3,32 @@
     padding: 0;
 }
 
+
+
+
+/* SETTINGS FOR BOTTOM FOOTER */
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header{
+    flex: 0 0 auto;
+ }
+.main-content{
+    flex: 1 0 auto;
+}
+footer{
+    flex: 0 0 auto;
+}
+/* SETTINGS FOR BOTTOM FOOTER */
+
+
+
+
 a {
     text-decoration: none;
 }
@@ -98,11 +124,44 @@ header {
 .wrapper-container > .title {
     font-size: 2em;
 }
-.contacts {
+
+
+
+
+
+
+/* WHAT_IS */
+.desc-field {
+    display: flex;
+    flex-direction: row;
+
+    font-size: 1.5em;
+    color: #FFFF47;
+    text-shadow: 1px 1px 3px #FA0105;    
+}
+
+.desc-field .text {
+    padding: 20px;
+}
+
+.about_us-text {
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    color: #FFFF47;
+    text-shadow: 1px 1px 3px #FA0105;    
+}
+/* WHAT_IS */
+
+
+
+
+/* CONTACT */
+.contact {
     background: #1E1E29;
 }
 
-.contacts form {
+.contact form {
     width: 50%;
     margin-left: 20px;
 }
@@ -110,7 +169,7 @@ header {
     display: flex;
     flex-direction: column;
 }
-.contacts input, .contacts textarea {
+.contact input, .contact textarea {
     box-shadow: 0px 0px 4px #0095E4;
     border: none;
     background-color: #1E1E29;
@@ -125,26 +184,41 @@ header {
     box-shadow: 0px 0px 10px #FFFF47;
     border: none;
 }
+/* CONTACTS */
 
 
-.desc-field {
+
+
+
+/* FOOTER */
+footer {
+    padding: 100px;
+    background-image: url("assets/img/banner-space.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer .text {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 200px;
+    color: #FA0105;
+    text-shadow: 1px 1px 10px  #FFFF47;
+    text-align: center;
+}
+footer ul {
     display: flex;
     flex-direction: row;
-
-    font-size: 1.5em;
-    color: #FFFF47;
-    text-shadow: 1px 1px 3px #FA0105;    
+    justify-content: space-around;
+    width: 150px;
+    margin: auto;
 }
-
-.desc-field .text {
-    padding: 20px;
+footer ul li {
+    list-style: none;    
+    width: 40px;
 }
-
-
-.about_us-text {
-    padding: 10px;
-    text-align: center;
-    font-size: 2em;
-    color: #FFFF47;
-    text-shadow: 1px 1px 3px #FA0105;    
+footer ul li img {
+    display: block;
+    width: 100%;
 }
+/* FOOTER */
